@@ -55,7 +55,7 @@ main{
 #dashboard-content{
     width: 78%;
     background: #F9F9F9;
-    margin-left: 18.5rem;
+    margin-left: 18.7rem;
 }
 .dashboard-content-container{
     padding: 1rem 2rem;
@@ -82,7 +82,7 @@ main{
 }
 .dash-main-header{
     line-height: 6;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 500;
 }
 .dash-total-cards{
@@ -102,7 +102,7 @@ main{
 }
 .total-price{
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     line-height: 3;
 }
@@ -115,7 +115,7 @@ main{
     margin-top: 1.5rem;
 }
 .student-card-header{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2.5;
     font-weight: 500;
 }
@@ -188,7 +188,7 @@ main{
 }
 .chart-content-header{
     padding: 1.2rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 .chart-box{
     display: flex;
