@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Fountain University</title>
+</head>
+<body>
+    <main>
+       <div class="container">
+            <aside id="dashboard-nav">
+                <div class="dashboard-nav-container">
+                    <h2 class="dashboard-nav-header">fountain university</h2>
+                    <ul class="dashboard-nav-list">
+                        <li class="dashboard-nav-item active">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 8.33333H7.16667V0H0.5V8.33333ZM0.5 15H7.16667V10H0.5V15ZM8.83333 15H15.5V6.66667H8.83333V15ZM8.83333 0V5H15.5V0H8.83333Z" fill="#F8F8F8"/>
+                            </svg>
+                            <p>Dashboard</p>
+                        </li>
+                        <li class="dashboard-nav-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 1.99992H10.35C10 1.03325 9.08333 0.333252 8 0.333252C6.91667 0.333252 6 1.03325 5.65 1.99992H2.16667C1.25 1.99992 0.5 2.74992 0.5 3.66659V15.3333C0.5 16.2499 1.25 16.9999 2.16667 16.9999H13.8333C14.75 16.9999 15.5 16.2499 15.5 15.3333V3.66659C15.5 2.74992 14.75 1.99992 13.8333 1.99992ZM8 1.99992C8.45833 1.99992 8.83333 2.37492 8.83333 2.83325C8.83333 3.29159 8.45833 3.66659 8 3.66659C7.54167 3.66659 7.16667 3.29159 7.16667 2.83325C7.16667 2.37492 7.54167 1.99992 8 1.99992ZM8 5.33325C9.38333 5.33325 10.5 6.44992 10.5 7.83325C10.5 9.21659 9.38333 10.3333 8 10.3333C6.61667 10.3333 5.5 9.21659 5.5 7.83325C5.5 6.44992 6.61667 5.33325 8 5.33325ZM13 15.3333H3V14.1666C3 12.4999 6.33333 11.5833 8 11.5833C9.66667 11.5833 13 12.4999 13 14.1666V15.3333Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                    
+                            <span>Students</span>
+                        </li>
+                        <li class="dashboard-nav-item">
+                            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 0.666667C16.575 0.375 15.5583 0.25 14.5833 0.25C12.9583 0.25 11.2083 0.583333 10 1.5C8.79168 0.583333 7.04168 0.25 5.41668 0.25C3.79168 0.25 2.04168 0.583333 0.833344 1.5V13.7083C0.833344 13.9167 1.04168 14.125 1.25001 14.125C1.33334 14.125 1.37501 14.0833 1.45834 14.0833C2.58334 13.5417 4.20834 13.1667 5.41668 13.1667C7.04168 13.1667 8.79168 13.5 10 14.4167C11.125 13.7083 13.1667 13.1667 14.5833 13.1667C15.9583 13.1667 17.375 13.4167 18.5417 14.0417C18.625 14.0833 18.6667 14.0833 18.75 14.0833C18.9583 14.0833 19.1667 13.875 19.1667 13.6667V1.5C18.6667 1.125 18.125 0.875 17.5 0.666667ZM17.5 11.9167C16.5833 11.625 15.5833 11.5 14.5833 11.5C13.1667 11.5 11.125 12.0417 10 12.75V3.16667C11.125 2.45833 13.1667 1.91667 14.5833 1.91667C15.5833 1.91667 16.5833 2.04167 17.5 2.33333V11.9167Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                    
+                            <span>Lecturers</span>
+                        </li>
+                        <li class="dashboard-nav-item">
+                            <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0.166748H2.00001C1.08334 0.166748 0.333344 0.916748 0.333344 1.83341V15.1667C0.333344 16.0834 1.08334 16.8334 2.00001 16.8334H12C12.9167 16.8334 13.6667 16.0834 13.6667 15.1667V1.83341C13.6667 0.916748 12.9167 0.166748 12 0.166748ZM2.00001 1.83341H6.16668V8.50008L4.08334 7.25008L2.00001 8.50008V1.83341Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                          
+                            <span>Courses</span>
+                        </li>
+                        <li class="dashboard-nav-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 1.99992H10.35C10 1.03325 9.08333 0.333252 8 0.333252C6.91667 0.333252 6 1.03325 5.65 1.99992H2.16667C1.25 1.99992 0.5 2.74992 0.5 3.66659V15.3333C0.5 16.2499 1.25 16.9999 2.16667 16.9999H13.8333C14.75 16.9999 15.5 16.2499 15.5 15.3333V3.66659C15.5 2.74992 14.75 1.99992 13.8333 1.99992ZM8 1.99992C8.45833 1.99992 8.83333 2.37492 8.83333 2.83325C8.83333 3.29159 8.45833 3.66659 8 3.66659C7.54167 3.66659 7.16667 3.29159 7.16667 2.83325C7.16667 2.37492 7.54167 1.99992 8 1.99992ZM8 5.33325C9.38333 5.33325 10.5 6.44992 10.5 7.83325C10.5 9.21659 9.38333 10.3333 8 10.3333C6.61667 10.3333 5.5 9.21659 5.5 7.83325C5.5 6.44992 6.61667 5.33325 8 5.33325ZM13 15.3333H3V14.1666C3 12.4999 6.33333 11.5833 8 11.5833C9.66667 11.5833 13 12.4999 13 14.1666V15.3333Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                    
+                            <span>Result</span>
+                        </li>
+                        <li class="dashboard-nav-item">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8333 1.66667V13.3333H2.16667V1.66667H13.8333ZM14.75 0H1.25C0.833333 0 0.5 0.333333 0.5 0.75V14.25C0.5 14.5833 0.833333 15 1.25 15H14.75C15.0833 15 15.5 14.5833 15.5 14.25V0.75C15.5 0.333333 15.0833 0 14.75 0ZM7.16667 3.33333H12.1667V5H7.16667V3.33333ZM7.16667 6.66667H12.1667V8.33333H7.16667V6.66667ZM7.16667 10H12.1667V11.6667H7.16667V10ZM3.83333 3.33333H5.5V5H3.83333V3.33333ZM3.83333 6.66667H5.5V8.33333H3.83333V6.66667ZM3.83333 10H5.5V11.6667H3.83333V10Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                    
+                            <span>Resources</span>
+                        </li>
+                        <li class="dashboard-nav-item">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 0.333252H5.5V1.99992H10.5V0.333252ZM7.16667 11.1666H8.83333V6.16658H7.16667V11.1666ZM13.8583 5.65825L15.0417 4.47492C14.6833 4.04992 14.2917 3.64992 13.8667 3.29992L12.6833 4.48325C11.3917 3.44992 9.76667 2.83325 8 2.83325C3.85833 2.83325 0.5 6.19159 0.5 10.3333C0.5 14.4749 3.85 17.8333 8 17.8333C12.15 17.8333 15.5 14.4749 15.5 10.3333C15.5 8.56659 14.8833 6.94159 13.8583 5.65825ZM8 16.1666C4.775 16.1666 2.16667 13.5583 2.16667 10.3333C2.16667 7.10825 4.775 4.49992 8 4.49992C11.225 4.49992 13.8333 7.10825 13.8333 10.3333C13.8333 13.5583 11.225 16.1666 8 16.1666Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                    
+                            <span>Alumni</span>
+                        </li>
+                        <li class="dashboard-nav-item account-item">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.95 9.28C13.98 9.03 14 8.77 14 8.5C14 8.23 13.98 7.97 13.94 7.72L15.63 6.4C15.78 6.28 15.82 6.06 15.73 5.89L14.13 3.12C14.03 2.94 13.82 2.88 13.64 2.94L11.65 3.74C11.23 3.42 10.79 3.16 10.3 2.96L10 0.84C9.97001 0.64 9.80001 0.5 9.60001 0.5H6.40001C6.20001 0.5 6.04001 0.64 6.01001 0.84L5.71001 2.96C5.22001 3.16 4.77001 3.43 4.36001 3.74L2.37001 2.94C2.19001 2.87 1.98001 2.94 1.88001 3.12L0.280007 5.89C0.180007 6.07 0.220008 6.28 0.380008 6.4L2.07001 7.72C2.03001 7.97 2.00001 8.24 2.00001 8.5C2.00001 8.76 2.02001 9.03 2.06001 9.28L0.370007 10.6C0.220007 10.72 0.180007 10.94 0.270007 11.11L1.87001 13.88C1.97001 14.06 2.18001 14.12 2.36001 14.06L4.35001 13.26C4.77001 13.58 5.21001 13.84 5.70001 14.04L6.00001 16.16C6.04001 16.36 6.20001 16.5 6.40001 16.5H9.60001C9.80001 16.5 9.97001 16.36 9.99001 16.16L10.29 14.04C10.78 13.84 11.23 13.57 11.64 13.26L13.63 14.06C13.81 14.13 14.02 14.06 14.12 13.88L15.72 11.11C15.82 10.93 15.78 10.72 15.62 10.6L13.95 9.28ZM8.00001 11.5C6.35001 11.5 5.00001 10.15 5.00001 8.5C5.00001 6.85 6.35001 5.5 8.00001 5.5C9.65001 5.5 11 6.85 11 8.5C11 10.15 9.65001 11.5 8.00001 11.5Z" fill="white" fill-opacity="0.71"/>
+                            </svg>                                    
+                            <span>Account setting</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <section id="dashboard-content">
+                <div class="dashboard-content-container">
+                    <nav class="nav-right">
+                        <i class="icon-notify">
+                            <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.99998 16.3333C7.91665 16.3333 8.66665 15.5833 8.66665 14.6666H5.33331C5.33331 15.5833 6.07498 16.3333 6.99998 16.3333ZM12 11.3333V7.16658C12 4.60825 10.6333 2.46659 8.24998 1.89992V1.33325C8.24998 0.641585 7.69165 0.083252 6.99998 0.083252C6.30831 0.083252 5.74998 0.641585 5.74998 1.33325V1.89992C3.35831 2.46659 1.99998 4.59992 1.99998 7.16658V11.3333L0.333313 12.9999V13.8333H13.6666V12.9999L12 11.3333Z" fill="#333333"/>
+                            </svg>
+                        </i>
+                        <img src="img/Ellipse 1.png" alt="user-img"> 
+                        <span class="user-name">Dr. Andrew Peters</span>
+                        <i class="icon-drop">
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.175 0.158447L5 3.97511L8.825 0.158447L10 1.33345L5 6.33345L0 1.33345L1.175 0.158447Z" fill="#333333"/>
+                            </svg>                                
+                        </i>
+                    </nav>
+                    <div class="dashboard-content-main">
+                        <div class="dashboard-content-dash-header">dashboard</div>
+                        <p class="dash-main-header">Overview</p>
+                        <div class="dash-total-cards">
+                            <div class="total-card-item">
+                                <p class="total-header">Total no. of students</p>
+                                <p class="total-price">1025</p>
+                            </div>
+                            <div class="total-card-item">
+                                <p class="total-header">Total no. of lecturers</p>
+                                <p class="total-price">1025</p>
+                            </div>
+                            <div class="total-card-item">
+                                <p class="total-header">Outstanding payments</p>
+                                <p class="total-price">N10,500,000</p>
+                            </div>
+                            <div class="total-card-item">
+                                <p class="total-header">Total no. of resources</p>
+                                <p class="total-price">204</p>
+                            </div>
+                        </div>
+                        <div class="student-dash-container">
+                            <div class="student-card">
+                                <p class="student-card-header">Top 5 students</p>
+                                <div class="student-card-item">
+                                    <div class="item-card">
+                                        <img src="img/15.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/47.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/Rectangle 18.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/54.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/25.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-card">
+                                <p class="student-card-header">Bottom 5 students</p>
+                                <div class="student-card-item">
+                                    <div class="item-card">
+                                        <img src="img/655.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/Rectangle 18-1.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/Rectangle 18-2.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/Rectangle 18-3.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="item-card">
+                                        <img src="img/Rectangle 18-4.png" alt="student-img" srcset="">
+                                        <span class="card-text">
+                                            <p class="student-name">Balogun Jay S.</p>
+                                            <div class="bottom-card-text">
+                                                <p class="student-grade">200LVL - 3.98</p>
+                                                <p class="view">view</p>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="student-action-card">
+                                <p class="student-card-header">Quick action</p>
+                                <div class="student-action-card-box">
+                                    <svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.5 0.0166016C11.8879 0.0166016 0 11.9045 0 26.5166C0 33.8809 3.10243 40.9736 8.51169 45.9762C8.94904 46.3807 9.6314 46.3539 10.0358 45.9167C10.4403 45.4792 10.4137 44.797 9.97617 44.3926C5.00696 39.7969 2.15709 33.2814 2.15709 26.5166C2.15709 13.0939 13.0773 2.17369 26.5 2.17369C39.9227 2.17369 50.8429 13.0939 50.8429 26.5166C50.8429 39.9393 39.9227 50.8595 26.5 50.8595C25.9045 50.8595 25.4215 51.3425 25.4215 51.9381C25.4215 52.5336 25.9045 53.0166 26.5 53.0166C41.1123 53.0166 53 41.1287 53 26.5166C53 11.9045 41.1123 0.0166016 26.5 0.0166016Z" fill="black"/>
+                                        <path d="M15.1328 16.2274H37.8673C38.4628 16.2274 38.9458 15.7444 38.9458 15.1489C38.9458 14.5533 38.4628 14.0703 37.8673 14.0703H15.1328C14.5373 14.0703 14.0543 14.5533 14.0543 15.1489C14.0543 15.7444 14.5373 16.2274 15.1328 16.2274Z" fill="black"/>
+                                        <path d="M15.1328 27.5956H37.8673C38.4628 27.5956 38.9458 27.1126 38.9458 26.517C38.9458 25.9215 38.4628 25.4385 37.8673 25.4385H15.1328C14.5373 25.4385 14.0543 25.9215 14.0543 26.517C14.0543 27.1126 14.5373 27.5956 15.1328 27.5956Z" fill="black"/>
+                                        <path d="M38.9458 37.8842C38.9458 37.2887 38.4628 36.8057 37.8673 36.8057H15.1328C14.5373 36.8057 14.0543 37.2887 14.0543 37.8842C14.0543 38.4797 14.5373 38.9628 15.1328 38.9628H37.8673C38.4628 38.9628 38.9458 38.4797 38.9458 37.8842Z" fill="black"/>
+                                    </svg>
+                                    <div class="card-box-text-container">
+                                        <p class="card-box-text">Add new courses</p>
+                                        <p class="card-box-text">Assign lecturers </p>
+                                        <p class="card-box-text">Add a new lecturer</p>
+                                        <p class="card-box-text">View students</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       </div>
+
+    </main>
+    <div class="canvas-container">
+        <div class="chart-content-container">
+            <h4 class="chart-content-header">Student - Lecturer statistics</h4>
+            <div class="chart-box">
+                <p class="chart-y-label">Population</p>
+                <canvas id="myChart" class="bar-chart"></canvas>
+            </div>
+            <p class="chart-x-label">Year</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <script>
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+    </script>
+</body>
+</html>
