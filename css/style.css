@@ -188,6 +188,7 @@ main{
 }
 .chart-content-header{
     padding: 1.2rem;
+    font-weight: 300;
 }
 .chart-box{
     display: flex;
